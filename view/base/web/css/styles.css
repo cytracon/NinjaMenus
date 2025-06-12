@@ -85,11 +85,11 @@
 .nav-item.ninjamenus-hover > .item-submenu {
     display: block;
 }
-.magezon-builder > .nav-item > a {
+.cytracon-builder > .nav-item > a {
     line-height: 50px;
     font-weight: 600;
 }
-.magezon-builder > .nav-item > .opener {
+.cytracon-builder > .nav-item > .opener {
     height: 50px;
     width: 50px;
 }
@@ -222,7 +222,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-family: "Magezon-Icons" !important;
+    font-family: "Cytracon-Icons" !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -255,7 +255,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-family: "Magezon-Icons" !important;
+    font-family: "Cytracon-Icons" !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -310,18 +310,18 @@
 .ninjamenus .form.contact {
     width: 100% !important;
 }
-.ninjamenus.ninjamenus-vertical > .magezon-builder > .nav-item > a .caret {
+.ninjamenus.ninjamenus-vertical > .cytracon-builder > .nav-item > a .caret {
     -webkit-opacity: 0.8;
     -moz-opacity: 0.8;
     opacity: 0.8;
     float: right;
     line-height: inherit;
 }
-.ninjamenus.ninjamenus-vertical > .magezon-builder > .nav-item > a .label {
+.ninjamenus.ninjamenus-vertical > .cytracon-builder > .nav-item > a .label {
     right: auto;
 }
 .ninjamenus.ninjamenus-desktop.ninjamenus-horizontal
-    > .magezon-builder
+    > .cytracon-builder
     > .nav-item {
     float: left;
     margin: 0;
@@ -534,8 +534,8 @@
 .block.ninjamenus-widget > .ninjamenus.ninjamenus-drilldown {
     border: 1px solid #6e716e;
 }
-.scroll-to-fixed-fixed .magezon-builder > .nav-item.label-top_left > a .label,
-.scroll-to-fixed-fixed .magezon-builder > .nav-item.label-top_right > a .label {
+.scroll-to-fixed-fixed .cytracon-builder > .nav-item.label-top_left > a .label,
+.scroll-to-fixed-fixed .cytracon-builder > .nav-item.label-top_right > a .label {
     display: none;
 }
 .scroll-to-fixed-fixed .ninjamenus-hide-sticky {
