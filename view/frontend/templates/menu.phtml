@@ -30,6 +30,18 @@ $secondStyles                          = $builderHelper->parseStyles($secondColo
 $secondHoverColors['color']            = $builderHelper->getStyleColor($menu->getData('secondary_hover_color'));
 $secondHoverColors['background-color'] = $builderHelper->getStyleColor($menu->getData('secondary_hover_background_color'));
 $secondHoverStyles                     = $builderHelper->parseStyles($secondHoverColors);
+
+// CSS minify Funktion, geschützt vor Mehrfachdeklaration
+if (!function_exists('minifyCss')) {
+    function minifyCss($css) {
+        $css = preg_replace('!/\*.*?\*/!s', '', $css);
+        $css = preg_replace('/\n\s*\n/', "\n", $css);
+        $css = preg_replace('/[\n\r \t]/', ' ', $css);
+        $css = preg_replace('/ +/', ' ', $css);
+        $css = preg_replace('/ ?([,:;{}]) ?/', '$1', $css);
+        return trim($css);
+    }
+}
 ?>
 <?php if ($menu->getId()) { ?>
 <?php if ($hamburger) { ?>
@@ -56,7 +68,7 @@ $secondHoverStyles                     = $builderHelper->parseStyles($secondHove
 		</div>
 	</div>
 	<?php } ?>
-	<?php if ($customCss) { ?><style><?= $customCss ?></style><?php } ?>
+	<?php if ($customCss) { ?><style><?= minifyCss($customCss) ?></style><?php } ?>
 </div>
 <?php if ($mainStyles || $mainHoverStyles || $secondStyles || $secondHoverStyles) { ?>
 <style class="mgz-style">
