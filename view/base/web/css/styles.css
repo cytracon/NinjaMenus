@@ -542,21 +542,8 @@
     display: none !important;
 }
 .ninjamenus-lazy-blur {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    -webkit-transition: 0.3s filter linear;
-    -moz-transition: 0.3s filter linear;
-    -ms-transition: 0.3s filter linear;
-    -o-transition: 0.3s filter linear;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
 }
 .ninjamenus-lazy-blur .ninjamenus-lazy-loaded {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    image-rendering: initial;
 }
 .ninjamenus-drilldown-back {
     line-height: 50px;

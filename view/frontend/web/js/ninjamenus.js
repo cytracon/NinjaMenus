@@ -521,7 +521,7 @@ define([
         },
 
         loadLazyImages: function (elem, timeout) {
-            if (!timeout) timeout = 100;
+            if (!timeout) timeout = 0;
             var self = this;
             setTimeout(function () {
                 elem.find(".ninjamenus-lazy").each(function (index, el) {
@@ -532,17 +532,12 @@ define([
                             if (src) {
                                 $(this).attr("src", src);
                                 $(this)
-                                    .removeClass("ninjamenus-lazy-blur")
-                                    .addClass("ninjamenus-lazy-loaded");
                             }
-                            $('.ninjamenus img[data-src="' + src + '"').attr(
+                            $('.ninjamenus img[src="' + src + '"').attr(
                                 "src",
                                 src
                             );
-                            $('.ninjamenus img[data-src="' + src + '"')
-                                .removeClass("ninjamenus-lazy-blur")
-                                .addClass("ninjamenus-lazy-loaded");
-                        }
+                            $('.ninjamenus img[src="' + src + '"')                       }
                     }
                 });
                 elem.find(self.options.submenuSelector).each(function (
